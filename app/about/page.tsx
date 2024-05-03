@@ -1,3 +1,5 @@
+import PageTransEffect from "../components/pageTransEffect";
+
 export default function AboutPage() {
-  return <div>about</div>;
+  return <PageTransEffect>about</PageTransEffect>;
 }

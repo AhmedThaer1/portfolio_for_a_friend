@@ -11,4 +11,8 @@ export const NavLinks = [
     url: "/portfolio",
     title: "Portfolio",
   },
+  {
+    url: "/contact",
+    title: "Contact",
+  },
 ];

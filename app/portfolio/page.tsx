@@ -1,3 +1,5 @@
+import PageTransEffect from "../components/pageTransEffect";
+
 export default function PortfolioPage() {
-  return <div>portfolio page</div>;
+  return <PageTransEffect>portfolio page</PageTransEffect>;
 }
