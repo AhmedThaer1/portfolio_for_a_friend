@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
@@ -8,24 +8,26 @@ const ContactPage = () => {
   const [error, setError] = useState(false);
   const text = "Contact Me!";
 
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(false);
     setSuccess(false);
 
+    if (!form.current) return;
+
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
         form.current,
         process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       .then(
         () => {
           setSuccess(true);
-          form.current.reset();
+          form.current?.reset();
         },
         () => {
           setError(true);
