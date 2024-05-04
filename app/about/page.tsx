@@ -30,12 +30,13 @@ export default function AboutPage() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
               veritatis qui dolorum ratione similique at blanditiis voluptatem
               molestiae expedita eos pariatur aliquid repudiandae ut vel nam
-              suscipit beatae deserunt cum.?
+              suscipit beatae deserunt cum.? <br /> I Want The Graphic Card
+              3070ti PLEASE EOOWO
             </p>
             <span className="italic">
               Here we put a lil quot about you zingge if you want if not ill
               delete it if you want it u lil monkey just send me what quot i
-              should put here and descrip u{" "}
+              should put here and descrip u
             </span>
             <div className="self-end">
               you signature make me one and send it to me so i can put it here
