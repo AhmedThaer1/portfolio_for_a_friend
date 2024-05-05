@@ -12,6 +12,7 @@ import {
   bottomVartiants,
   listItemsVariants,
 } from "@/framerMotion/variants";
+import Image from "next/image";
 
 interface MenuButtonProps {
   setIsOpen: (value: boolean | ((prev: boolean) => boolean)) => void;
@@ -38,15 +39,25 @@ export default function Navbar() {
         ))}
       </div>
 
-      <div className="md:flex xl:w-1/3 xl:justify-center">
+      <div className="md:flex xl:w-1/3 xl:justify-center gap-4">
         <Link
-          href={"/"}
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+          href={"https://www.artstation.com/mohammadar"}
+          target="_blank"
+          className="bg-black p-1 flex items-center justify-center rounded-xl"
         >
-          <span className="text-white mr-1">LOGO</span>
-          <span className="w-20 h-8 rounded bg-white text-black flex items-center justify-center">
-            .Designer
-          </span>
+          <Image
+            src={"/ArtStation-H.svg"}
+            alt="ArtStation Icon"
+            width={35}
+            height={35}
+          />
+        </Link>
+        <Link
+          href={"https://www.instagram.com/m_ar_95/"}
+          target="_blank"
+          className="bg-blue-200 p-1 flex items-center justify-center rounded-xl"
+        >
+          <Image src={"/ig.png"} alt="ArtStation Icon" width={35} height={35} />
         </Link>
       </div>
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PageTransEffect from "./components/pageTransEffect";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,12 +22,16 @@ export default function Home() {
             Description <br /> I Want The Graphic Card 3070ti PLEASE EOOWO
           </p>
           <div className="w-full flex justify-center gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-              View My Work
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-black text-black">
-              Contact me
-            </button>
+            <Link href={"/portfolio"}>
+              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+                View My Work
+              </button>
+            </Link>
+            <Link href={"/contact"}>
+              <button className="p-4 rounded-lg ring-1 ring-black text-black">
+                Contact me
+              </button>
+            </Link>
           </div>
         </div>
       </main>
