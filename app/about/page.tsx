@@ -30,18 +30,13 @@ export default function AboutPage() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
               veritatis qui dolorum ratione similique at blanditiis voluptatem
               molestiae expedita eos pariatur aliquid repudiandae ut vel nam
-              suscipit beatae deserunt cum.? <br /> I Want The Graphic Card
-              3070ti PLEASE EOOWO
+              suscipit beatae deserunt cum.?
             </p>
             <span className="italic">
               Here we put a lil quot about you zingge if you want if not ill
               delete it if you want it u lil monkey just send me what quot i
               should put here and descrip u
             </span>
-            <div className="self-end">
-              you signature make me one and send it to me so i can put it here
-              and make it an png or svg and give me its paths
-            </div>
             <motion.div
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "20px" }}
@@ -80,44 +75,34 @@ export default function AboutPage() {
               animate={isSkillVisible ? { x: 0 } : {}}
             >
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                3D Artist
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Iot Dev.
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Game Dev.
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Photo Editor
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Video Editor
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Vfx Artist
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Game Designer
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Concepts Designer
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
+                Desktop App Programmer
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills
-              </div>
-
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                skills i can add as much as you want
+                Highly Skilled Computer Troubleshooter
               </div>
             </motion.div>
             {/* skill scroll */}
@@ -148,7 +133,7 @@ export default function AboutPage() {
             ref={experienceRef}
           >
             <motion.h1
-              initial={{ x: "-300px" }}
+              initial={{ x: "-400px" }}
               animate={isExperienceVisible ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
@@ -166,11 +151,10 @@ export default function AboutPage() {
                 {/* left */}
                 <div className="w-1/3">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Enginner
+                    3D Motion Designer At HAZE
                   </div>
-                  <div className=" p-3 text-sm italic">description</div>
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    Date
+                  <div className=" p-3 text-sm italic">
+                    The task was to make motion videos for the company products
                   </div>
                 </div>
                 {/* center */}
@@ -200,11 +184,10 @@ export default function AboutPage() {
                 {/* right */}
                 <div className="w-1/3">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Enginner
+                    Game Dev.
                   </div>
-                  <div className=" p-3 text-sm italic">description</div>
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    Date
+                  <div className=" p-3 text-sm italic">
+                    Worked as freelancer for many small local studios
                   </div>
                 </div>
               </div>
@@ -214,11 +197,10 @@ export default function AboutPage() {
                 {/* left */}
                 <div className="w-1/3">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Enginner
+                    IoT Dev.
                   </div>
-                  <div className=" p-3 text-sm italic">description</div>
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    Date
+                  <div className=" p-3 text-sm italic">
+                    developing highly innovative
                   </div>
                 </div>
                 {/* center */}
@@ -231,6 +213,29 @@ export default function AboutPage() {
                 </div>
                 {/* right */}
                 <div className="w-1/3"></div>
+              </div>
+
+              {/* items */}
+              <div className="flex justify-between h-48">
+                {/* left */}
+                <div className="w-1/3"></div>
+                {/* center */}
+                <div className="w-1/6">
+                  {/* line */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* circle */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* right */}
+                <div className="w-1/3">
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Color Corrector
+                  </div>
+                  <div className=" p-3 text-sm italic">
+                    Worked as freelancer as a video and images color corrector
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>

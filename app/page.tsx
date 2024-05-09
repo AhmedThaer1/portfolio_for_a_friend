@@ -17,10 +17,8 @@ export default function Home() {
         </div>
         {/* text container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
-          <h1 className="text-4xl font-bold md:text-6xl">Title</h1>
-          <p>
-            Description <br /> I Want The Graphic Card 3070ti PLEASE EOOWO
-          </p>
+          <h1 className="text-4xl font-bold md:text-6xl">Mohammad N. Jabbar</h1>
+          <p>3D artist, Iot dev. , game dev</p>
           <div className="w-full flex justify-center gap-4">
             <Link href={"/portfolio"}>
               <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">

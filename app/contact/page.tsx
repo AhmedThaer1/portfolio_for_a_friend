@@ -68,6 +68,7 @@ const ContactPage = () => {
           ref={form}
           className="h-[80%] lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
+          <span className="text-red-50">GIVE ME THE GPU YOU LIL RAT</span>
           <span>Dear Mohammad,</span>
           <textarea
             rows={6}
