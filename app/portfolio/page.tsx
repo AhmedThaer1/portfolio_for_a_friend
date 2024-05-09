@@ -30,16 +30,20 @@ export default function PortfolioPage() {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${link.color}`}
                 key={link.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div className="flex flex-col gap-8 text-white justify-center items-center">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {link.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  <div
+                    className={`relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[${link.width}] xl:h-[${link.height}]`}
+                  >
                     {link.img && (
                       <Image src={link.img} alt="Work Images" fill />
                     )}
                   </div>
-                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p
+                    className={`w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[${link.width}]`}
+                  >
                     {link.desc}
                   </p>
                   <Link href={link.link} className="flex justify-end">

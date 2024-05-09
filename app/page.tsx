@@ -9,7 +9,7 @@ export default function Home() {
         {/* image container */}
         <div className="h-1/2 relative lg:h-full lg:w-1/2">
           <Image
-            src={"/hero.png"}
+            src={"/pfp.png"}
             alt="hero image"
             fill
             className="object-contain"
