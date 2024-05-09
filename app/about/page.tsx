@@ -26,17 +26,12 @@ export default function AboutPage() {
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p className="text-lg">
-              heres A Lil description about you zingge and i want it this long :
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-              veritatis qui dolorum ratione similique at blanditiis voluptatem
-              molestiae expedita eos pariatur aliquid repudiandae ut vel nam
-              suscipit beatae deserunt cum.?
+              Programmer, designer and developer in various fields such as
+              programming, games, advertisements, applications, visual effects,
+              smart devices and the Internet of Things. I aim to reach the
+              highest capabilities and master the highest technical
+              specializations to prove that humans are capable of everything.
             </p>
-            <span className="italic">
-              Here we put a lil quot about you zingge if you want if not ill
-              delete it if you want it u lil monkey just send me what quot i
-              should put here and descrip u
-            </span>
             <motion.div
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "20px" }}

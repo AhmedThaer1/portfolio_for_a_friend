@@ -4,7 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "images.pexels.com",
+        hostname: "cdna.artstation.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdnb.artstation.com",
       },
     ],
   },

@@ -16,8 +16,11 @@ export default function PortfolioPage() {
   return (
     <PageTransEffect>
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-          My Works <br /> I Want The Graphic Card 3070ti PLEASE EOOWO
+        <div className="w-screen h-[calc(100vh-6rem)] flex flex-col gap-4 items-center justify-center text-8xl text-center">
+          My Works
+          <span className="uppercase text-xl">
+            if you can imagine something , I can make it even better
+          </span>
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
@@ -32,12 +35,14 @@ export default function PortfolioPage() {
                     {link.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={link.img} alt="Work Images" fill />
+                    {link.img && (
+                      <Image src={link.img} alt="Work Images" fill />
+                    )}
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {link.desc}
                   </p>
-                  <Link href={"/"} className="flex justify-end">
+                  <Link href={link.link} className="flex justify-end">
                     <button className="p-2 text-sm md:p-2 md:text-lg lg:p-6 lg:text-xl bg-white text-gray-600 font-semibold m-4 rounded hover:bg-black hover:text-white">
                       See Demo
                     </button>
